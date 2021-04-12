@@ -1,0 +1,356 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Bold ☞"), url("../fonts/Gilroy-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Medium ☞"), url("../fonts/Gilroy-Medium.woff") format("woff");
+}
+
+html,
+body {
+  height: 100%;
+}
+.body{
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  margin: 0 10%;
+  position: relative;
+}
+
+/***** menu *****/
+
+.nav {
+  border-bottom: 2px solid #828282;
+}
+.burger_img{
+  position: absolute;
+  right: 0px;
+  top: 68px;
+  display: none;
+z-index: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__link {
+  color: #828282;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Gilroy-Bold;
+}
+
+.menu__link--active {
+  color: #070707;
+}
+
+/***** info *****/
+
+.info {
+  display: flex;
+  position: relative;
+  padding-bottom: 30px;
+}
+.info__fio {
+  font-size: 48px;
+  line-height: 59px;
+  margin-top: 40px;
+  font-family: Gilroy-Bold;
+  width: 45%;
+}
+.info__preview {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 95px;
+  font-family: Gilroy-Medium;
+}
+.info_lang {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -15px;
+  top: 50%;
+}
+.menu__info_lang{
+display: none;
+}
+.info_lang__item {
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.info_lang__item--grey {
+  color: #828282;
+}
+.info__img {
+  margin-bottom: 105px;
+  max-width: 100%;
+}
+.info__img_whole{
+  display: none;
+}
+.sidebar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 2;
+  
+}
+.sidebar_open{
+  display: block;
+  
+}
+.sidebar__close_bnt{
+display: none;
+}
+/*****about-me  *****/
+
+.about-me {
+  box-sizing: border-box;
+  background: #f6f6f6;
+  padding-top: 120px;
+}
+.about-me__title {
+  text-align: center;
+  font-size: 34px;
+  line-height: 42px;
+  font-family: Gilroy-Bold;
+  margin-bottom: 17px;
+}
+.about-me__description {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 107px;
+  font-family: Gilroy-Medium;
+}
+.about-me__item {
+  margin-bottom: 35px;
+}
+
+/*****skills  *****/
+
+.skills__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  padding-top: 91px;
+  padding-bottom: 69px;
+  font-family: Gilroy-Bold;
+}
+.skills__description {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 70px;
+  font-family: Gilroy-Medium;
+}
+.skills_programs_item {
+  text-align: center;
+}
+.skills_programs {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.skills_programs__name {
+  margin-bottom: 56px;
+  font-family: Gilroy-Bold;
+  text-align: center;
+}
+.skills_programs__img {
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.skills_programs__level__item {
+  margin-bottom: 111px;
+}
+/***portfolio***/
+.portfolio {
+  padding-top: 111px;
+  text-align: center;
+  background: #f6f6f6;
+}
+.portfolio_title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 47px;
+  font-family: Gilroy-Bold;
+}
+.portfolio__img {
+  max-width: 80%;
+  padding: 0 10%;
+}
+.portfolio_link {
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+  display: block;
+  padding-bottom: 99px;
+  margin-top: 45px;
+  font-family: Gilroy-Medium;
+}
+/***contacts**/
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 114px;
+}
+.contacts__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Gilroy-Bold;
+}
+.contacts__description {
+  text-align: center;
+  margin-bottom: 42px;
+  font-family: Gilroy-Medium;
+}
+
+.contacts__btn {
+  border-radius: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 115px;
+
+  margin-bottom: 90px;
+  font-family: Gilroy-Bold;
+  padding: 8px 20px;
+}
+.contacts__icons {
+  margin-bottom: 45px;
+  
+}
+.contacts__icon {
+  margin-right: 50px;
+}
+.contacts__icon:last-child {
+  margin-right: 0;
+}
+.contacts__social {
+  color: #828282;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin-bottom: 90px;
+  font-family: Gilroy-Medium;
+}
+
+@media (max-width: 550px) {
+  .info__foto{
+    display: flex;
+    justify-content: center;
+  }
+  .info__img_whole{
+    display: inline-block;
+    margin-bottom: 83px;
+    max-width: 100%;
+  }
+  .info__img{
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+/***info***/
+.nav{
+  display: none;
+}
+.burger_img{
+  display: inline-block;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu__item {
+  list-style: none;
+  margin-bottom: 38px;
+}
+.menu__link {
+font-family: Gilroy-Bold;
+font-size: 34px;
+line-height: 42px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+.info__preview{
+  margin-top: 23px;
+}
+.info_lang{
+  display: none;
+}
+.menu__info_lang {
+  display: inline-block;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -40px;
+  top: 80%;
+}
+.menu__info_lang__item {
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+}
+.menu__info_lang__item--grey {
+  color: #828282;
+}
+.sidebar__close{
+  position: absolute;
+  right: 18px;
+  top: 40px;
+}
+.sidebar__close_bnt{
+ display: inline-block;
+}
+.sidebar{
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  margin-left: 20px; 
+}
+
+  /***about_me***/
+.about-me__description{
+  padding-right: 10%;
+  padding-left: 10%;
+}
+/***skills***/
+.skills_programs{
+display: flex;
+flex-direction: column;
+}
+/***contacts***/
+.contacts__btn {
+  width: 290px;
+}
+
