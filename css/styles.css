@@ -89,6 +89,11 @@ z-index: 1;
   right: -15px;
   top: 50%;
 }
+.info__foto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .menu__info_lang{
 display: none;
 }
@@ -103,6 +108,7 @@ display: none;
 .info__img {
   margin-bottom: 105px;
   max-width: 100%;
+  width: 100%;
 }
 .info__img_whole{
   display: none;
